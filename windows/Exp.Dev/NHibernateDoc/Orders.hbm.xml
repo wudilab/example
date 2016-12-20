@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="NHibernateDoc" assembly="NHibernateDoc">
+  <class name="Orders" table="Orders" lazy="true" >
+    <composite-id name="OrderIdentifier" class="OrderIdentifier">
+      <key-property name="StoreID" column="StoreID" />
+      <key-property name="ProductID" column="ProductID" />
+      <key-property name="OrderID" column="OrderID" />
+    </composite-id>
+    <!--<version name="Version" column="Version" />-->
+    <many-to-one name="Products" class="Products"
+    insert="false" update="false">
+      <column name="StoreID" />
+      <column name="ProductID" />
+    </many-to-one>
+    <property name="Amount" column="Amount" />
+  </class>
+</hibernate-mapping>

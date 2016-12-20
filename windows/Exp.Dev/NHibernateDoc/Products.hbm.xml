@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="NHibernateDoc" assembly="NHibernateDoc">
+  <class name="Products" table="Products">
+    <composite-id name="ProductIdentifier" class="ProductIdentifier">
+      <key-property name="StoreID" column="StoreID" />
+      <key-property name="ProductID" column="ProductID" />
+    </composite-id>
+    <set name="Orders" inverse="true">
+      <key>
+        <column name="StoreID"/>
+        <column name="ProductID"/>
+      </key>
+      <one-to-many class="Orders"/>
+    </set>
+    <property name="ProductName" column="ProductName" type="String" />
+  </class>
+</hibernate-mapping>

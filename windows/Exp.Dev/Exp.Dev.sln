@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exp.Dev", "Exp.Dev\Exp.Dev.csproj", "{3D639802-117E-42E7-87F4-7B7B19525C50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateDoc", "NHibernateDoc\NHibernateDoc.csproj", "{56B8B39C-188F-4FD0-8380-3A2DB9A973EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3D639802-117E-42E7-87F4-7B7B19525C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D639802-117E-42E7-87F4-7B7B19525C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D639802-117E-42E7-87F4-7B7B19525C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B8B39C-188F-4FD0-8380-3A2DB9A973EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B8B39C-188F-4FD0-8380-3A2DB9A973EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B8B39C-188F-4FD0-8380-3A2DB9A973EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B8B39C-188F-4FD0-8380-3A2DB9A973EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
